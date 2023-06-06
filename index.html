@@ -2,35 +2,100 @@
 <html>
     <head>
         <title>About Me</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="resources/styles.css">
+
     </head>
     <body>
-        <div class="container">
-            <h1>About Me</h1>
-            <p>Hi there! My name is John Doe and I'm a <span class="highlight">passionate
-                    web developer</span> with a love for creating engaging and
-                interactive websites.</p>
-            <p>I have experience in HTML, CSS, JavaScript, and various web
-                frameworks. My goal is to combine my technical skills with my
-                creativity to build beautiful and user-friendly websites.</p>
-            <div class="skills">
-                <div class="skill">
-                    <h3>HTML</h3>
-                    <p>Proficient</p>
-                </div>
-                <div class="skill">
-                    <h3>CSS</h3>
-                    <p>Proficient</p>
-                </div>
-                <div class="skill">
-                    <h3>JavaScript</h3>
-                    <p>Intermediate</p>
-                </div>
+        <nav>
+            <div class="container">
+                <h1>Kodimela Sai Vardhan</h1>
+                <ul class="navbar">
+                    <li><a href="#about" onclick="showSection('about')">About</a></li>
+                    <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+                    <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+                </ul>
             </div>
-            <div class="contact">
-                <p>Feel free to get in touch!</p>
-                <p><a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+        </nav>
+
+        <div id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+
+                    <div class="image-container">
+                        <img src="resources/images/image.jpg" alt="Person"
+                            class="person-image">
+
+                        <div class="person-info">
+                            <p>Hi there! My name is Sai Vardhan and I'm a <span
+                                    class="highlight">passionate web developer</span>
+                                with a love for creating engaging and
+                                interactive
+                                websites.</p>
+                            <p>I have experience in HTML, CSS, JavaScript, and
+                                various web frameworks. My goal is to combine my
+                                technical skills with my creativity to build
+                                beautiful and user-friendly websites.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-content">
+                    <div class="skill-tile">
+                        <h3>HTML</h3>
+                        <p>Intermediate</p>
+                        <div class="certificate-overlay">
+                            <div class="close-button">&times;</div>
+                            <img src="resources/images/html.png"
+                                alt="HTML Certificate">
+                        </div>
+                    </div>
+                    <div class="skill-tile">
+                        <h3>CSS</h3>
+                        <p>Intermediate</p>
+                        <div class="certificate-overlay">
+                            <div class="close-button">&times;</div>
+                            <img src="resources/images/html.png"
+                                alt="HTML Certificate">
+                        </div>
+                    </div>
+                    <div class="skill-tile">
+                        <h3>JavaScript</h3>
+                        <p>Beginner</p>
+                        <div class="certificate-overlay">
+                            <div class="close-button">&times;</div>
+                            <img src="resources/images/html.png"
+                                alt="HTML Certificate">
+                        </div>
+                    </div>
+                    <div class="skill-tile">
+                        <h3>Java</h3>
+                        <p>Intermediate</p>
+                        <div class="certificate-overlay">
+                            <div class="close-button">&times;</div>
+                            <img src="resources/images/html.png"
+                                alt="HTML Certificate">
+                        </div>
+                    </div>
+                    <!-- Add more skill-tile divs here as needed -->
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact">
+                    <p>Feel free to get in touch!</p>
+                    <p><a href="mailto:john.doe@example.com">saivardhankodimela@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <script src="resources/script.js"></script>
     </body>
 </html>
