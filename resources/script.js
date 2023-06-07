@@ -1,5 +1,3 @@
-// Add this JavaScript code at the end of the <body> tag or in a separate JavaScript file
-
 // Function to show the "About" section by default
 function showDefaultSection() {
   const aboutSection = document.getElementById("about");
